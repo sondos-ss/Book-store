@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Store</h1>
+        <section class="form-section">
+            <h2>Add New Book</h2>
+            <form id="bookForm">
+                <div class="form-row">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="number" id="quantity" placeholder="Quantity" required>
+                    <input type="text" id="price" placeholder="Price" required>
+                </div>
+                <div class="form-row button-row">
+                    <button type="submit">Store This Data</button>
+                </div>
+            </form>
+            
+        </section>
+        <section class="table-section">
+            <h2>All Books</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
